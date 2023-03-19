@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #262626;
+    color: #f4f4f4;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1100px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+/* Utilities */
+a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+img {
+    width: 300px;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    background: #5e5c5c;
+    padding: 0.4rem 0.8rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    border: none;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* Boxes */
+#boxes .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 7rem;
+}
+
+#boxes .box {
+    cursor: pointer;
+    border: 3px solid #5e5c5c;
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+#boxes .box img {
+    width: 100%;
+}
+
+#boxes .content {
+    padding: 1rem;
+}
+
+#boxes .content p {
+    text-align: left;
+    padding: 1rem 0;
+}
+
+/* facebook */
+#boxes .box-1 {
+    box-shadow: 1px 2px 4px #4267B2;
+    transition: transform 0.4s ease-in;
+}
+
+#boxes .box-1:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 7px 14px 0px rgba(0, 180, 216, 1);
+}
+
+#boxes .box-1 .btn-facebook:hover {
+    background: rgba(0, 180, 216, 1);
+}
+
+
+/* spotify */
+#boxes .box-2 {
+    box-shadow: 1px 2px 4px #1DB954;
+    transition: transform 0.4s ease-in;
+}
+
+#boxes .box-2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 7px 14px 0px rgba(29, 185, 84, 1);
+}
+
+#boxes .box-2 .btn-spotify:hover {
+    background: rgba(29, 185, 84, 1);
+}
+
+/* Instagram */
+#boxes .box-3 {
+    box-shadow: 1px 2px 4px #E1306C;
+    transition: transform 0.4s ease-in;
+}
+
+#boxes .box-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 7px 14px 0px rgba(225, 48, 108, 1);
+}
+
+#boxes .box-3 .btn-instagram:hover {
+    background: rgba(225, 48, 108, 1);
+}
+
+@media(max-width: 500px) {
+    #boxes .box-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+}
